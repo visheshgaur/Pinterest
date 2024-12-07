@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const plm=require("passport-local-mongoose");
 const { none } = require('./multer');
-mongoose.connect("mongodb://0.0.0.0/pintrestDb").then(()=>{
+mongoose.connect("mongodb+srv://vishesh:<db_password>@cluster0.srgqo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
   console.log("connected")
 })
 const userSchema = new mongoose.Schema({
