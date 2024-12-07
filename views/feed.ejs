@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Feed</title>
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="navbar">
+      <span>Welcome to the Community Feed</span>
+      <a href="/logout">Logout</a>
+    </div>
+
+    <!-- Feed Header -->
+    <div class="feed-header">
+      <h1>Community Posts</h1>
+      <p>Explore posts from all users!</p>
+    </div>
+
+    <div class="posts">
+        <% if (posts && posts.length > 0) { %>
+          <% posts.forEach(post => { %>
+            <div class="post">
+              <h3><%= post.user.username %> (@<%= post.user.username %>)</h3>
+              <p class="user-info">Posted on <%= new Date(post.createdAt).toLocaleString() %></p>
+              <p><%= post.text %></p>
+              <% if (post.image) { %>
+                <div class="post-image">
+                  <img src="images/uploads/<%= post.image %>" alt="Post Image">
+                </div>
+              <% } %>
+              <!-- <p class="likes"><strong>Likes:</strong> <%= post.likes.length %></p> -->
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p class="no-posts">No posts to display.</p>
+        <% } %>
+      </div>
+    </div> -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .flex{
+    display: flex;
+    gap:0.1rem;
+  }
+  .feeder {
+    position: relative; /* To position it in the top-right */
+    top: 4rem; /* Adjust vertical alignment */
+    left:90%; /* Adjust horizontal alignment */
+    padding: 0.5rem 1rem; /* Add some padding */
+    font-size: 1rem; /* Make the text readable */
+    font-weight: bold; /* Emphasize the text */
+    color: white; /* Text color */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Attractive gradient background */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for the feeder link */
+  .feeder:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reverse gradient */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1.05); /* Slightly enlarge */
+  }
+  
+  .containerpeer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* .cards{
+    display: flex;
+    gap:30px;
+  
+  } */
+  .cardpeer {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .username {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .tagline,
+  .description {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font:bold
+  }
+ 
+  form {
+    display: flex; /* Flex layout for aligning items */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between elements */
+    max-width: 400px; /* Limit form width */
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 15px; /* Add padding inside the form */
+    border: 2px solid #007BFF; /* Add a border with a primary color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input Field Styling */
+form input[type="file"] {
+    padding: 10px; /* Add inner spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Button Styling */
+form button {
+    padding: 10px 15px; /* Inner spacing */
+    background-color: #007BFF; /* Primary blue color */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Slightly larger font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.container {
+  max-width: 1200px; /* Center the content and limit its width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px;
+  justify-content: center; /* Center cards in the container */
+  align-items: start;
+}
+
+.card {
+  width: 300px; /* Consistent width for cards */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Makes sure the image covers the card area without stretching */
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+input[type="text"] {
+  width: 100%; /* Full width for responsive design */
+  max-width: 400px; /* Limit width to a reasonable size */
+  padding: 12px 15px; /* Add padding for comfortable typing */
+  font-size: 16px; /* Readable font size */
+  color: #333; /* Text color */
+  border: 2px solid #ccc; /* Subtle border */
+  border-radius: 8px; /* Rounded corners for modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  outline: none; /* Remove default outline */
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF; /* Highlight border on focus */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Stronger shadow */
+}
+
+input[type="text"]::placeholder {
+  color: #aaa; /* Placeholder color */
+  font-style: italic; /* Makes placeholder text distinctive */
+}
+
+input[type="text"]:hover {
+  border-color: #888; /* Slightly darker border on hover */
+}
+.file-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Hide the original input */
+  cursor: pointer;
+}
+
+.file-input label {
+  display: block;
+  padding: 12px 20px;
+  background-color: #007BFF; /* Button background color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.file-input label:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.file-input label:active {
+  background-color: #003d80; /* Even darker shade on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+@media (max-width: 768px) {
+  form {
+      max-width: 90%; /* Use most of the screen width */
+      padding: 10px; /* Reduce padding */
+  }
+
+  form button {
+      font-size: 14px; /* Smaller font size for the button */
+      padding: 8px 12px; /* Adjust spacing */
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+      gap: 10px; /* Adjust gap for smaller devices */
+  }
+
+  .card {
+      width: 100%; /* Full width for cards on small screens */
+  }
+}

@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.navbar span {
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  background-color: #ff6347;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ff4500;
+}
+
+/* Feed Header */
+.feed-header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.feed-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.feed-header p {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Posts Section */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Post Card */
+.post {
+  background:rgb(217, 210, 210);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post h3 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.post .user-info {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.post p {
+  color: #555;
+  margin: 1rem 0;
+}
+
+.post .post-image {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.post .post-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post .likes {
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+/* No Posts Message */
+.no-posts {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin-top: 0.5rem;
+  }
+
+  .feed-header h1 {
+    font-size: 2rem;
+  }
+
+  .posts {
+    gap: 1rem;
+  }
+
+  .post {
+    padding: 1rem;
+  }
+
+  .post h3 {
+    font-size: 1.1rem;
+  }
+
+  .post .user-info {
+    font-size: 0.85rem;
+  }
+
+  .post p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .feed-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .post {
+    padding: 0.8rem;
+  }
+
+  .post h3 {
+    font-size: 1rem;
+  }
+
+  .post .user-info {
+    font-size: 0.8rem;
+  }
+
+  .post p {
+    font-size: 0.95rem;
+  }
+}
